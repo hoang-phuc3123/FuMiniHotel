@@ -15,3 +15,39 @@ E:\FPT-Ky7\PRN221\RazorPageDemo\ViewModel\obj\Debug\net7.0\ViewModel.dll
 E:\FPT-Ky7\PRN221\RazorPageDemo\ViewModel\obj\Debug\net7.0\refint\ViewModel.dll
 E:\FPT-Ky7\PRN221\RazorPageDemo\ViewModel\obj\Debug\net7.0\ViewModel.pdb
 E:\FPT-Ky7\PRN221\RazorPageDemo\ViewModel\obj\Debug\net7.0\ref\ViewModel.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\bin\Debug\net7.0\ViewModel.deps.json
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\bin\Debug\net7.0\ViewModel.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\bin\Debug\net7.0\ViewModel.pdb
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\bin\Debug\net7.0\DataModel.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\bin\Debug\net7.0\Repository.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\bin\Debug\net7.0\DataModel.pdb
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\bin\Debug\net7.0\Repository.pdb
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.csproj.AssemblyReference.cache
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.AssemblyInfoInputs.cache
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.AssemblyInfo.cs
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.sourcelink.json
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.csproj.Up2Date
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\refint\ViewModel.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.pdb
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\ViewModel\obj\Debug\net7.0\ref\ViewModel.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\bin\Debug\net7.0\ViewModel.deps.json
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\bin\Debug\net7.0\ViewModel.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\bin\Debug\net7.0\ViewModel.pdb
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\bin\Debug\net7.0\DataModel.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\bin\Debug\net7.0\Repository.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\bin\Debug\net7.0\DataModel.pdb
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\bin\Debug\net7.0\Repository.pdb
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.csproj.AssemblyReference.cache
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.AssemblyInfoInputs.cache
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.AssemblyInfo.cs
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.sourcelink.json
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.csproj.Up2Date
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\refint\ViewModel.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.pdb
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ref\ViewModel.dll

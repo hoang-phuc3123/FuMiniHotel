@@ -11,45 +11,68 @@ namespace RazorPage.Pages.Account
 {
     public class LoginModel : PageModel
     {
+        private readonly IConfiguration _configuration;
         private readonly CustomerViewModel _customerViewModel;
 
         [BindProperty]
         public Credential credential { get; set; }
 
-        public LoginModel(CustomerViewModel customerViewModel)
+        public LoginModel(CustomerViewModel customerViewModel, IConfiguration configuration)
         {
             _customerViewModel = customerViewModel;
+            _configuration = configuration;
         }
 
         public void OnGet()
         {
+            
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
+            var EMAIL_ADMIN = _configuration["Admin:Email"];
+            var PASSWORD_ADMIN = _configuration["Admin:Password"];
             if (ModelState.IsValid)
             {
-                var user = _customerViewModel.GetCustomerByEmailAndPassword(credential.Email, credential.Password);
-                if (user != null)
+                var admin = false;
+                var claims = new List<Claim>();
+                if (credential.Email == EMAIL_ADMIN && credential.Password == PASSWORD_ADMIN)
                 {
-                    var claims = new List<Claim>
+                    claims = new List<Claim>
+                    {
+                        new Claim("AdminId",EMAIL_ADMIN.ToString()),
+                        new Claim(ClaimTypes.Email, EMAIL_ADMIN)
+                    };
+                    admin = true;
+                }
+                else
+                {
+                    var user = _customerViewModel.GetCustomerByEmailAndPassword(credential.Email, credential.Password);
+                    if (user == null)
+                    {
+                        ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                        return Page();
+                    }
+                    claims = new List<Claim>
                     {
                         new Claim("CustomerId",user.Id.ToString()),
                         new Claim(ClaimTypes.Name, user.Name),
                         new Claim(ClaimTypes.Email, user.Email)
                     };
-
-                    var claimsIdentity = new ClaimsIdentity(claims, "MyCookie");
-                    ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
-
-                    await HttpContext.SignInAsync("MyCookie",claimsPrincipal);
-
-                    return RedirectToPage("/Index");
                 }
+                var claimsIdentity = new ClaimsIdentity(claims, "MyCookie");
+                ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
 
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                await HttpContext.SignInAsync("MyCookie", claimsPrincipal);
+                if (admin == true)
+                {
+                    return RedirectToPage("/Admin/Admin");
+                }
+                else
+                {
+                    return RedirectToPage("/Index");
+                } 
             }
-
             return Page();
         }
         public class Credential

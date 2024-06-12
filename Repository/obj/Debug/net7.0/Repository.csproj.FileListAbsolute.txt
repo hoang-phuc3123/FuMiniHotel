@@ -13,3 +13,35 @@ E:\FPT-Ky7\PRN221\RazorPageDemo\Repository\obj\Debug\net7.0\Repository.dll
 E:\FPT-Ky7\PRN221\RazorPageDemo\Repository\obj\Debug\net7.0\refint\Repository.dll
 E:\FPT-Ky7\PRN221\RazorPageDemo\Repository\obj\Debug\net7.0\Repository.pdb
 E:\FPT-Ky7\PRN221\RazorPageDemo\Repository\obj\Debug\net7.0\ref\Repository.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\bin\Debug\net7.0\Repository.deps.json
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\bin\Debug\net7.0\Repository.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\bin\Debug\net7.0\Repository.pdb
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\bin\Debug\net7.0\DataModel.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\bin\Debug\net7.0\DataModel.pdb
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.sourcelink.json
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.csproj.Up2Date
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\refint\Repository.dll
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.pdb
+C:\Users\Lc_Tn\Source\Repos\FuMiniHotel\Repository\obj\Debug\net7.0\ref\Repository.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\bin\Debug\net7.0\Repository.deps.json
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\bin\Debug\net7.0\Repository.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\bin\Debug\net7.0\Repository.pdb
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\bin\Debug\net7.0\DataModel.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\bin\Debug\net7.0\DataModel.pdb
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.sourcelink.json
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.csproj.Up2Date
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\refint\Repository.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.pdb
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\ref\Repository.dll

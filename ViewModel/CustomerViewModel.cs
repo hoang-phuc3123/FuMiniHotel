@@ -42,7 +42,7 @@ namespace ViewModel
             Customer? customer = _customerRepository.GetCustomerByEmailAndPassword(email, password);
             if (customer == null)
             {
-                throw new Exception("Invalid email or password");
+                return null;
             }
             else
             {
