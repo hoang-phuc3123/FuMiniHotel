@@ -2,6 +2,16 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    int currentPage = Model.BookingHistory.PageIndex;
+    int totalPages = Model.BookingHistory.TotalPages;
+    int startPage = Math.Max(1, currentPage - 3);
+    int endPage = Math.Min(totalPages, currentPage + 3);
+}
+@{
+    var prevDisabled = !Model.BookingHistory.HasPreviousPage ? "disabled" : "";
+    var firstDisabled = !Model.BookingHistory.HasPreviousPage ? "disabled" : "";
+    var lastDisabled = !Model.BookingHistory.HasNextPage ? "disabled" : "";
+    var nextDisabled = !Model.BookingHistory.HasNextPage ? "disabled" : "";
 }
 
 <div class="text-center">
@@ -10,7 +20,7 @@
 
 <div class="align-content-center">
 
-    @if(Model.BookingHistory!=null && Model.BookingHistory.Count>0)
+    @if (Model.BookingHistory != null && Model.BookingHistory.Count > 0)
     {
         <h2>Booking History</h2>
         <table class="table">
@@ -46,6 +56,46 @@
 
 </div>
 <td><button type="button" class="btn btn-primary" onclick="redirectToBooking()">Booking</button></td>
+
+<ul class="pagination" style="display: flex; justify-content: center;">
+    <a asp-page="./Index"
+      
+       asp-route-pageIndex=1
+      
+       class="btn btn-primary @firstDisabled">
+        First
+    </a>
+    <a asp-page="./Index"
+       asp-route-pageIndex="@(Model.BookingHistory.PageIndex - 1)"
+      
+       class="btn btn-primary @prevDisabled">
+        Previous
+    </a>
+
+        <ul class="pagination" style=" margin:5px;">
+        @Html.Raw(Model.BookingHistory.GeneratePaginationHtml())
+    </ul>
+    </a>
+
+    <a asp-page="./Index"
+      
+       asp-route-pageIndex="@(Model.BookingHistory.PageIndex + 1)"
+    
+       class="btn btn-primary @nextDisabled">
+        Next
+    </a>
+
+    <a asp-page="./Index"
+       asp-route-pageIndex="@Model.BookingHistory.TotalPages"
+      
+       class="btn btn-primary @lastDisabled">
+        Last
+    </a>
+
+</ul>
+
+
+
 
 @section Scripts{
     <script>

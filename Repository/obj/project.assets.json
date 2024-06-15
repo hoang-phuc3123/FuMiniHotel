@@ -3062,19 +3062,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\ANDIM\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT-Ky7\\PRN221\\RazorPageDemo\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\ANDIM\\Desktop\\ASM2\\FuMiniHotel\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "E:\\FPT-Ky7\\PRN221\\RazorPageDemo\\Repository\\Repository.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT-Ky7\\PRN221\\RazorPageDemo\\Repository\\obj\\",
+      "projectPath": "C:\\Users\\ANDIM\\Desktop\\ASM2\\FuMiniHotel\\Repository\\Repository.csproj",
+      "packagesPath": "C:\\Users\\ANDIM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ANDIM\\Desktop\\ASM2\\FuMiniHotel\\Repository\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ANDIM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3082,14 +3087,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\FPT-Ky7\\PRN221\\RazorPageDemo\\DataModel\\DataModel.csproj": {
-              "projectPath": "E:\\FPT-Ky7\\PRN221\\RazorPageDemo\\DataModel\\DataModel.csproj"
+            "C:\\Users\\ANDIM\\Desktop\\ASM2\\FuMiniHotel\\DataModel\\DataModel.csproj": {
+              "projectPath": "C:\\Users\\ANDIM\\Desktop\\ASM2\\FuMiniHotel\\DataModel\\DataModel.csproj"
             }
           }
         }
@@ -3098,6 +3104,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3119,7 +3130,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
