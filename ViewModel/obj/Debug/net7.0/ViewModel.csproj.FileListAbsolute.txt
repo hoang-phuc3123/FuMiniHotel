@@ -51,3 +51,21 @@ C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Deb
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\refint\ViewModel.dll
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.pdb
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\ViewModel\obj\Debug\net7.0\ref\ViewModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\bin\Debug\net7.0\ViewModel.deps.json
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\bin\Debug\net7.0\ViewModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\bin\Debug\net7.0\ViewModel.pdb
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\bin\Debug\net7.0\DataModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\bin\Debug\net7.0\Repository.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\bin\Debug\net7.0\DataModel.pdb
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\bin\Debug\net7.0\Repository.pdb
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.csproj.AssemblyReference.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.AssemblyInfoInputs.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.AssemblyInfo.cs
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.csproj.CoreCompileInputs.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.sourcelink.json
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.csproj.Up2Date
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\refint\ViewModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ViewModel.pdb
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\ViewModel\obj\Debug\net7.0\ref\ViewModel.dll

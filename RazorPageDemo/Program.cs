@@ -13,6 +13,7 @@ builder.Services.AddScoped<CustomerViewModel>();
 builder.Services.AddScoped<CustomerRepository>();
 builder.Services.AddScoped<BookingReservationRepository>();
 builder.Services.AddScoped<BookingDetailRepository>();
+builder.Services.AddScoped<EmailViewModel>();
 builder.Services.AddAuthentication().AddCookie("MyCookie", options =>
 {
     options.Cookie.Name = "MyCookie";

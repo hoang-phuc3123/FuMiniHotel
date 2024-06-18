@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\ViewModel\\ViewModel.csproj": {}
+    "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\ViewModel\\ViewModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\DataModel\\DataModel.csproj": {
+    "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\DataModel\\DataModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\DataModel\\DataModel.csproj",
+        "projectUniqueName": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\DataModel\\DataModel.csproj",
         "projectName": "DataModel",
-        "projectPath": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\DataModel\\DataModel.csproj",
-        "packagesPath": "C:\\Users\\Lc_Tn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\DataModel\\obj\\",
+        "projectPath": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\DataModel\\DataModel.csproj",
+        "packagesPath": "C:\\Users\\vanha\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\DataModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lc_Tn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vanha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,26 +81,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\Repository\\Repository.csproj": {
+    "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Lc_Tn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\Repository\\obj\\",
+        "projectPath": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\vanha\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lc_Tn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vanha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,8 +128,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\DataModel\\DataModel.csproj": {
-                "projectPath": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\DataModel\\DataModel.csproj"
+              "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\DataModel\\DataModel.csproj": {
+                "projectPath": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\DataModel\\DataModel.csproj"
               }
             }
           }
@@ -145,26 +159,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\ViewModel\\ViewModel.csproj": {
+    "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\ViewModel\\ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\ViewModel\\ViewModel.csproj",
+        "projectUniqueName": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\ViewModel\\ViewModel.csproj",
         "projectName": "ViewModel",
-        "projectPath": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\ViewModel\\ViewModel.csproj",
-        "packagesPath": "C:\\Users\\Lc_Tn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\ViewModel\\obj\\",
+        "projectPath": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\ViewModel\\ViewModel.csproj",
+        "packagesPath": "C:\\Users\\vanha\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lc_Tn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vanha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -178,11 +206,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\DataModel\\DataModel.csproj": {
-                "projectPath": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\DataModel\\DataModel.csproj"
+              "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\DataModel\\DataModel.csproj": {
+                "projectPath": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\DataModel\\DataModel.csproj"
               },
-              "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Lc_Tn\\Desktop\\ALL\\FPTU\\2024 SUMMER\\PRN221\\FuMiniHotel\\Repository\\Repository.csproj"
+              "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\FPT University\\PRN221\\Project\\Assignment 2\\FuMiniHotel\\Repository\\Repository.csproj"
               }
             }
           }
@@ -212,12 +240,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -42,3 +42,18 @@ C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\DataModel\obj\Deb
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.pdb
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.genruntimeconfig.cache
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\DataModel\obj\Debug\net7.0\ref\DataModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\bin\Debug\net7.0\DataModel.deps.json
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\bin\Debug\net7.0\DataModel.runtimeconfig.json
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\bin\Debug\net7.0\DataModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\bin\Debug\net7.0\DataModel.pdb
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.csproj.AssemblyReference.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.AssemblyInfoInputs.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.AssemblyInfo.cs
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.csproj.CoreCompileInputs.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.sourcelink.json
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\refint\DataModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.pdb
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\DataModel.genruntimeconfig.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\DataModel\obj\Debug\net7.0\ref\DataModel.dll

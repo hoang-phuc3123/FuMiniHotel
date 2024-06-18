@@ -13,14 +13,16 @@ namespace RazorPage.Pages.Account
     {
         private readonly IConfiguration _configuration;
         private readonly CustomerViewModel _customerViewModel;
+        private readonly EmailViewModel _emailViewModel;
 
         [BindProperty]
         public Credential credential { get; set; }
 
-        public LoginModel(CustomerViewModel customerViewModel, IConfiguration configuration)
+        public LoginModel(CustomerViewModel customerViewModel, IConfiguration configuration, EmailViewModel emailViewModel)
         {
             _customerViewModel = customerViewModel;
             _configuration = configuration;
+            _emailViewModel = emailViewModel;
         }
 
         public void OnGet()

@@ -45,3 +45,19 @@ C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\De
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\refint\Repository.dll
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.pdb
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\Repository\obj\Debug\net7.0\ref\Repository.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\bin\Debug\net7.0\Repository.deps.json
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\bin\Debug\net7.0\Repository.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\bin\Debug\net7.0\Repository.pdb
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\bin\Debug\net7.0\DataModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\bin\Debug\net7.0\DataModel.pdb
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.sourcelink.json
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.csproj.Up2Date
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\refint\Repository.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\Repository.pdb
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\Repository\obj\Debug\net7.0\ref\Repository.dll
