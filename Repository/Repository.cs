@@ -44,14 +44,29 @@ namespace Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(object id)
+        //public async Task DeleteAsync(object id)
+        //{
+        //    T entityToDelete = await _dbSet.FindAsync(id);
+        //    if (entityToDelete != null)
+        //    {
+        //        _dbSet.Remove(entityToDelete);
+        //        await _context.SaveChangesAsync();
+        //    }
+        //}
+
+        public void HardDelete(T entity)
         {
-            T entityToDelete = await _dbSet.FindAsync(id);
-            if (entityToDelete != null)
-            {
-                _dbSet.Remove(entityToDelete);
-                await _context.SaveChangesAsync();
-            }
+            _dbSet.Remove(entity);
+        }
+
+        public void HardDeleteRange(List<T> entities)
+        {
+            _dbSet.RemoveRange(entities);
+        }
+
+        public async Task SaveChange()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }

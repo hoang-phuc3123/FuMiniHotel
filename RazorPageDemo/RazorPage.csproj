@@ -7,8 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataModel\DataModel.csproj" />
-    <ProjectReference Include="..\ViewModel\ViewModel.csproj" />
+    <_ContentIncludedByDefault Remove="libman.json" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\js\signalr\dist\browser\signalr.js" />
+    <None Include="wwwroot\js\signalr\dist\browser\signalr.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataModel\DataModel.csproj" />
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj" />
+  </ItemGroup>	
 </Project>

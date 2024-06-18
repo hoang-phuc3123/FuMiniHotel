@@ -1,11 +1,10 @@
 using DataModel.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+using RazorPage.Hubs;
 using Repository;
 using ViewModel;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<FuminiHotelManagementContext>(options =>
@@ -13,12 +12,14 @@ builder.Services.AddDbContext<FuminiHotelManagementContext>(options =>
 builder.Services.AddScoped<CustomerViewModel>();
 builder.Services.AddScoped<CustomerRepository>();
 builder.Services.AddScoped<BookingReservationRepository>();
+builder.Services.AddScoped<BookingDetailRepository>();
 builder.Services.AddAuthentication().AddCookie("MyCookie", options =>
 {
     options.Cookie.Name = "MyCookie";
     options.LoginPath = "/Account/Login";
     options.AccessDeniedPath = "/Error";
 });
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -38,7 +39,12 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages();
-app.MapFallbackToPage("/Account/Login");
+app.MapHub<SignalRServer>("/signalRServer");
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapRazorPages();
+    endpoints.MapFallbackToPage("/Account/Login");
+});
 
 app.Run();

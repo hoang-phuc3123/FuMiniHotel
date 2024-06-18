@@ -73,10 +73,12 @@ namespace ViewModel
                 .ToList();
             return bookingDetails;
         }
-        public async Task<List<RoomViewModel>> GetAvailableRooms()
+        public async Task<List<RoomViewModel>> GetAvailableRooms(DateTime startDate, DateTime endDate)
         {
-            var rooms = await _roomRepository.GetAvailableRooms();
-            var roomViewModels = rooms.Select(r => new RoomViewModel
+            //List<RoomViewModel> rooms = new List<RoomViewModel>();  
+            //List<BookingDetail> bookingDetails = (List<BookingDetail>)await _bookingDetailRepository.GetAllAsync();  
+            var availableRooms = await _roomRepository.GetAvailableRooms(startDate, endDate);
+            var roomViewModels = availableRooms.Select(r => new RoomViewModel
             {
                 RoomId = r.RoomId,
                 RoomNumber = r.RoomNumber,
@@ -86,6 +88,7 @@ namespace ViewModel
                 RoomPricePerDay = r.RoomPricePerDay,
                 RoomTypeName = r.RoomType.RoomTypeName
             }).ToList();
+
             return roomViewModels;
         }
         public async Task<bool>BookRooms(int CustomerId, List<string> RoomNumbers, DateTime startDate, DateTime endDate)
@@ -142,7 +145,7 @@ namespace ViewModel
                         BookingReservationId = bookingReservation.BookingReservationId
                     };
                     await _bookingDetailRepository.AddAsync(bookingDetail);
-                    _roomRepository.UpdateRoomStatus(room.RoomId, 0);
+                    //_roomRepository.UpdateRoomStatus(room.RoomId, 0);
                 }
             }
             catch (Exception e)
@@ -189,6 +192,33 @@ namespace ViewModel
             return true;
         }
 
+        public async Task<BookingReservation> GetAsync(int bookingReserationId)
+        {
+            return await _bookingReservationRepository.GetByIdAsync(bookingReserationId);
+        }
+
+        public async Task<List<BookingDetail>> GetAllBookingDetailByReservation(int bookingReserationId)
+        {
+            var bookingDetails =  await _bookingDetailRepository.GetAllAsync();
+            List<BookingDetail> result = bookingDetails.Where(b => b.BookingReservationId == bookingReserationId)
+                .ToList();
+            return result;
+        }
+
+        public async void DeleteBookingReservation(BookingReservation bookingReseration)
+        {
+            _bookingReservationRepository.HardDelete(bookingReseration);
+        }
+
+        public void DeleteRangeBookingDetail(List<BookingDetail> bookingDetails)
+        {
+                _bookingDetailRepository.HardDeleteRange(bookingDetails);
+        }
+
+        public async Task SaveChange()
+        {
+            await _bookingReservationRepository.SaveChange();
+        }
 
     }
     public class BookingDetailViewModel

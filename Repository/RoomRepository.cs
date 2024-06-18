@@ -8,13 +8,29 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class RoomRepository:Repository<RoomInformation>
+    public class RoomRepository : Repository<RoomInformation>
     {
-        public async Task<List<RoomInformation>> GetAvailableRooms()
+        public async Task<List<RoomInformation>> GetAvailableRooms(DateTime startDate, DateTime endDate)
         {
-            return await _dbSet
-                .Include(r => r.RoomType).Where(r => r.RoomStatus == 1)
+            var bookedRoom = await _dbSet
+               .Include(r => r.RoomType)
+               .Include(r => r.BookingDetails)
+               .Where(r => (r.BookingDetails.FirstOrDefault().StartDate >= startDate &&
+                           r.BookingDetails.FirstOrDefault().StartDate <= endDate) &&
+                           (r.BookingDetails.FirstOrDefault().EndDate >= startDate &&
+                           r.BookingDetails.FirstOrDefault().EndDate <= endDate))
+               .ToListAsync();
+
+            var allRooms = await _dbSet
+                .Include(r => r.RoomType)
+                .Include(r => r.BookingDetails)
                 .ToListAsync();
+
+            var availableRooms = allRooms
+                .Where(r => !bookedRoom.Contains(r))
+                .ToList();
+
+            return availableRooms;
         }
 
         public async Task<RoomInformation?> GetRoomByRoomNumber(string roomNumber)

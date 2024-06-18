@@ -1,6 +1,8 @@
 using DataModel.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.SignalR;
+using RazorPage.Hubs;
 using System.ComponentModel.DataAnnotations;
 using ViewModel;
 
@@ -9,6 +11,7 @@ namespace RazorPage.Pages
     public class BookingModel : PageModel
     {
         private readonly CustomerViewModel _customerViewModel;
+        private readonly IHubContext<SignalRServer> _signalRHub;
 
         [BindProperty]
         public List<RoomViewModel> Rooms { get; set; }
@@ -22,42 +25,70 @@ namespace RazorPage.Pages
         [BindProperty(SupportsGet = true)]
         public List<string> SelectedRooms { get; set; }
 
-        public BookingModel(CustomerViewModel customerViewModel)
+        public BookingModel(CustomerViewModel customerViewModel, IHubContext<SignalRServer> signalRHub)
         {
             _customerViewModel = customerViewModel;
             dtpStartDate = DateTime.Today;
             dtpEndDate = DateTime.Today.AddDays(1);
+            _signalRHub = signalRHub;
         }
 
         public async Task OnGetAsync()
         {
-            Rooms = await _customerViewModel.GetAvailableRooms();
+            Rooms = await _customerViewModel.GetAvailableRooms(dtpStartDate, dtpEndDate);
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        [HttpPost]
+        public async Task<IActionResult> OnPostAsync(string action)
+        {
+            switch (action)
+            {
+                case "validate":
+                    return await GetRoom();
+                case "book":
+                    return await Book();
+                default:
+                    return Page();
+            }
+        }
+
+        public async Task<IActionResult> Book()
         {
             if (!IsValidData())
             {
-                ModelState.AddModelError(string.Empty, "Invalid data. Please check your entries.");
+                //ModelState.AddModelError(string.Empty, "Invalid data. Please check your entries.");
 
-                // Reload the rooms data to ensure the table is populated
-                Rooms = await _customerViewModel.GetAvailableRooms();
+                //Rooms = await _customerViewModel.GetAvailableRooms(dtpStartDate, dtpEndDate);
 
                 return Page();
             }
 
             var isSuccess = await _customerViewModel.BookRooms(Int32.Parse(User.FindFirst("CustomerId").Value), SelectedRooms, dtpStartDate, dtpEndDate);
+            await _signalRHub.Clients.All.SendAsync("LoadBooking");
             if (!isSuccess)
             {
                 ModelState.AddModelError(string.Empty, "Booking failed. Please try again.");
 
-                // Reload the rooms data to ensure the table is populated
-                Rooms = await _customerViewModel.GetAvailableRooms();
+                Rooms = await _customerViewModel.GetAvailableRooms(dtpStartDate, dtpEndDate);
 
                 return Page();
             }
-
+            
             return RedirectToPage("/Index");
+        }
+
+        public async Task<IActionResult> GetRoom()
+        {
+            if(dtpStartDate >= dtpEndDate)
+            {
+                ModelState.AddModelError(string.Empty, "StartDate must be less than EndDate");
+            }
+            else
+            {
+                ModelState.Clear();
+                Rooms = await _customerViewModel.GetAvailableRooms(dtpStartDate, dtpEndDate);
+            }
+            return Page();
         }
 
         private bool IsValidData()
