@@ -20,6 +20,27 @@ namespace ViewModel
             _bookingDetailRepository = new BookingDetailRepository();
         }
 
+        public async Task<List<Customer>> GetRegisterCustomer()
+        {
+            return await _customerRepository.GetRegisterCustomer();
+        }
+
+        public async Task RegisterCustomer(Customer customer)
+        {
+            await _customerRepository.AddAsync(customer);
+        }
+
+        public async Task UpdateCustomer(Customer customer)
+        {
+            await _customerRepository.UpdateAsync(customer);
+        }
+
+        public void DeleteCustomer(Customer customer)
+        {
+            _customerRepository.HardDelete(customer);
+            _customerRepository.SaveChange();
+        }
+
         public async Task<IEnumerable<Customer>> GetAllCustomersAsync()
         {
             return await _customerRepository.GetAllAsync();
@@ -53,6 +74,11 @@ namespace ViewModel
                     Email = customer.EmailAddress
                 };
             }
+        }
+
+        public Customer GetCustomerByEmail(string email)
+        {
+            return _customerRepository.GetCustomerByEmail(email);
         }
         public async Task<List<BookingDetailViewModel>> GetListBookingHistoryAsync(String id)
         { 

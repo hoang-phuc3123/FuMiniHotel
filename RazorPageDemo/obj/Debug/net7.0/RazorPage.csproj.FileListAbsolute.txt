@@ -307,3 +307,8 @@ D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\obj\Debu
 D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\obj\Debug\net7.0\RazorPage.pdb
 D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\obj\Debug\net7.0\RazorPage.genruntimeconfig.cache
 D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\obj\Debug\net7.0\ref\RazorPage.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\System.CodeDom.dll

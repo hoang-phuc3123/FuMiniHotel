@@ -9,6 +9,14 @@ using System.Threading.Tasks;
 
 namespace ViewModel
 {
+    public class EmailSendModel
+    {
+        public string ToEmail { get; set; }
+        public string Subject { get; set; }
+        public string Body { get; set; }
+        public bool IsBodyHtml { get; set; }
+    }
+
     public class EmailViewModel
     {
         private readonly IConfiguration _configuration;
@@ -30,7 +38,7 @@ namespace ViewModel
                 EnableSsl = true,
             };
 
-            MailMessage mailMessage = new MailMessage(FromEmail, toEmail, subject, body)
+            MailMessage mailMessage = new MailMessage(FromEmail, "lamtanloc3@gmail.com", "a", "a")
             {
                 IsBodyHtml = isBodyHTML
             };

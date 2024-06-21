@@ -18,6 +18,7 @@ namespace Repository
                 .Where(br => br.CustomerId == customerId)
                 .Include(br => br.BookingDetails)
                 .ThenInclude(bd => bd.Room)
+                .OrderByDescending(br => br.BookingDate)
                 .ToListAsync();
         }
     }

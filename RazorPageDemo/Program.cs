@@ -10,10 +10,12 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<FuminiHotelManagementContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<CustomerViewModel>();
+builder.Services.AddScoped<EmailSendModel>();
 builder.Services.AddScoped<CustomerRepository>();
 builder.Services.AddScoped<BookingReservationRepository>();
 builder.Services.AddScoped<BookingDetailRepository>();
 builder.Services.AddScoped<EmailViewModel>();
+builder.Services.AddScoped<EmailSenderService>();
 builder.Services.AddAuthentication().AddCookie("MyCookie", options =>
 {
     options.Cookie.Name = "MyCookie";
@@ -21,6 +23,7 @@ builder.Services.AddAuthentication().AddCookie("MyCookie", options =>
     options.AccessDeniedPath = "/Error";
 });
 builder.Services.AddSignalR();
+builder.Services.AddHostedService<EmailSenderService>();
 
 var app = builder.Build();
 
