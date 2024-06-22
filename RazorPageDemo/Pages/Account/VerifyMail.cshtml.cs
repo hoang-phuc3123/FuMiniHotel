@@ -57,6 +57,8 @@ namespace RazorPage.Pages.Account
                 }
 
                 customer.CustomerStatus = 1;
+                customer.EmailVerifyCode = null;
+                customer.ExpiredCode = null;
                 _customerViewModel.UpdateCustomer(customer);
 
                 ModelState.AddModelError(string.Empty, "Successfully, login now.");

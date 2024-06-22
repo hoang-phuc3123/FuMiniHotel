@@ -23,6 +23,11 @@ namespace Repository
             return _dbContext.Customers.FirstOrDefault(c => c.EmailAddress == email);
         }
 
+        public List<Customer> GetAllCustomer()
+        {
+            return _dbContext.Customers.Where(c => c.CustomerStatus == 1).ToList();
+        }
+
         public async Task<List<Customer>> GetRegisterCustomer()
         {
             return await _dbContext.Customers.Where(c => c.CustomerStatus == 0).ToListAsync();

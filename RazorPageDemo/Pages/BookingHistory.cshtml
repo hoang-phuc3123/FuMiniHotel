@@ -1,0 +1,119 @@
+﻿@page
+@model BookingHistoryModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+@{
+    var firstDisabled = "disable";
+    var prevDisabled = "disable";
+    var lastDisabled = "disable";
+    var nextDisabled = "disable";
+    if(Model.BookingHistory != null)
+    {
+        var bookingHistory = Model.BookingHistory;
+        int currentPage = Model.BookingHistory.PageIndex;
+        int totalPages = Model.BookingHistory.TotalPages;
+        int startPage = Math.Max(1, currentPage - 3);
+        int endPage = Math.Min(totalPages, currentPage + 3);
+        prevDisabled = !Model.BookingHistory.HasPreviousPage ? "disabled" : "";
+        firstDisabled = !Model.BookingHistory.HasPreviousPage ? "disabled" : "";
+        lastDisabled = !Model.BookingHistory.HasNextPage ? "disabled" : "";
+        nextDisabled = !Model.BookingHistory.HasNextPage ? "disabled" : "";
+    }
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @User.Identity.Name</h1>
+    <button type="button" class="btn btn-primary" onclick="redirectToBooking()">Booking</button>
+</div>
+
+<div class="align-content-center">
+
+    @if (Model.BookingHistory != null && Model.BookingHistory.Count > 0)
+    {
+        <h2>Booking History</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Booking Date</th>
+                    <th>Total Price</th>
+                    <th>Room number</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Actual Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var booking in Model.BookingHistory)
+                {
+                    <tr id="roomTableBody">
+                        <td>@booking.BookingDate</td>
+                        <td>@booking.TotalPrice</td>
+                        <td>@booking.RoomNumber</td>
+                        <td>@booking.StartDate</td>
+                        <td>@booking.EndDate</td>
+                        <td>@booking.ActualPrice</td>
+                        <td>
+                            <form method="post">
+                                <input type="text" hidden class="form-control" asp-for="BookingReservationId"
+                                       value="@booking.BookingReservationID" />
+                                <input type="text" hidden class="form-control" asp-for="@Model.PageIndex"
+                                       value="BookingHistory.PageIndex" />
+                                <button type="submit" class="btn btn-danger">Cancel</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <ul class="pagination" style="display: flex; justify-content: center;">
+            <a asp-page="./Index"
+               asp-route-pageIndex=1
+               class="btn btn-primary @firstDisabled">
+                First
+            </a>
+            <a asp-page="./Index"
+               asp-route-pageIndex="@(Model.BookingHistory.PageIndex - 1)"
+               class="btn btn-primary @prevDisabled">
+                Previous
+            </a>
+
+            <ul class="pagination" style=" margin:5px;">
+                @Html.Raw(Model.BookingHistory.GeneratePaginationHtml())
+            </ul>
+
+            <a asp-page="./Index"
+               asp-route-pageIndex="@(Model.BookingHistory.PageIndex + 1)"
+               class="btn btn-primary @nextDisabled">
+                Next
+            </a>
+
+            <a asp-page="./Index"
+               asp-route-pageIndex="@Model.BookingHistory.TotalPages"
+               class="btn btn-primary @lastDisabled">
+                Last
+            </a>
+
+        </ul>
+    }
+    else
+    {
+        <h2>No booking history found</h2>
+    }
+
+</div>
+
+
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+
+@section Scripts {
+    <script>
+        function redirectToBooking() {
+            window.location.href = "/Customers/Booking";
+        }
+    </script>
+}

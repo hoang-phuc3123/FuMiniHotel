@@ -1,110 +1,39 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
-
+    ViewData["Title"] = "Login page";
 }
-@{
-    var bookingHistory = Model.BookingHistory;
-    int currentPage = Model.BookingHistory.PageIndex;
-    int totalPages = Model.BookingHistory.TotalPages;
-    int startPage = Math.Max(1, currentPage - 3);
-    int endPage = Math.Min(totalPages, currentPage + 3);
-    var prevDisabled = !Model.BookingHistory.HasPreviousPage ? "disabled" : "";
-    var firstDisabled = !Model.BookingHistory.HasPreviousPage ? "disabled" : "";
-    var lastDisabled = !Model.BookingHistory.HasNextPage ? "disabled" : "";
-    var nextDisabled = !Model.BookingHistory.HasNextPage ? "disabled" : "";
-}
+<h2>Login</h2>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome @User.Identity.Name</h1>
+<div class="container border" style="padding:20px">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="credential.Email"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="credential.Email" class="form-control" type="text" />
+            </div>
+            <div class="col-5">
+                <span asp-validation-for="credential.Email" class="text-danger"></span>
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="credential.Password"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="credential.Password" class="form-control" type="password" />
+            </div>
+            <div class="col-5">
+                <span asp-validation-for="credential.Password" class="text-danger"></span>
+            </div>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+
 </div>
 
-<div class="align-content-center">
-
-    @if (Model.BookingHistory != null && Model.BookingHistory.Count > 0)
-    {
-        <h2>Booking History</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Booking Date</th>
-                    <th>Total Price</th>
-                    <th>Room number</th>
-                    <th>Start Date</th>
-                    <th>End Date</th>
-                    <th>Actual Price</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var booking in Model.BookingHistory)
-                {
-                    <tr>
-                        <td>@booking.BookingDate</td>
-                        <td>@booking.TotalPrice</td>
-                        <td>@booking.RoomNumber</td>
-                        <td>@booking.StartDate</td>
-                        <td>@booking.EndDate</td>
-                        <td>@booking.ActualPrice</td>
-                        <td>
-                            <form method="post">
-                                <input type="text" hidden class="form-control" asp-for="BookingReservationId"
-                                       value="@booking.BookingReservationID" />
-                                <input type="text" hidden class="form-control" asp-for="@Model.PageIndex"
-                                       value="BookingHistory.PageIndex" />
-                                <button type="submit">Cancel</button>
-                            </form>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
-    else
-    {
-        <h2>No booking history found</h2>
-    }
-
-</div>
-<td><button type="button" class="btn btn-primary" onclick="redirectToBooking()">Booking</button></td>
-<ul class="pagination" style="display: flex; justify-content: center;">
-    <a asp-page="./Index"
-       asp-route-pageIndex=1
-       class="btn btn-primary @firstDisabled">
-        First
-    </a>
-    <a asp-page="./Index"
-       asp-route-pageIndex="@(Model.BookingHistory.PageIndex - 1)"
-       class="btn btn-primary @prevDisabled">
-        Previous
-    </a>
-
-    <ul class="pagination" style=" margin:5px;">
-        @Html.Raw(Model.BookingHistory.GeneratePaginationHtml())
-    </ul>
-
-    <a asp-page="./Index"
-       asp-route-pageIndex="@(Model.BookingHistory.PageIndex + 1)"
-       class="btn btn-primary @nextDisabled">
-        Next
-    </a>
-
-    <a asp-page="./Index"
-       asp-route-pageIndex="@Model.BookingHistory.TotalPages"
-       class="btn btn-primary @lastDisabled">
-        Last
-    </a>
-
-</ul>
-
-<script src="~/js/signalr/dist/browser/signalr.js"></script>
-<script src="~/js/signalr/dist/browser/signalr.min.js"></script>
-
-@section Scripts {
-    <script>
-        function redirectToBooking() {
-            window.location.href = "/Booking";
-        }
-    </script>
-}

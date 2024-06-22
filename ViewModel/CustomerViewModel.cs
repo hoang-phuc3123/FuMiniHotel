@@ -1,5 +1,4 @@
 ﻿using DataModel.Models;
-using Microsoft.EntityFrameworkCore;
 using Repository;
 using System.ComponentModel.DataAnnotations;
 
@@ -79,6 +78,31 @@ namespace ViewModel
         public Customer GetCustomerByEmail(string email)
         {
             return _customerRepository.GetCustomerByEmail(email);
+        }
+
+        public List<Customer> GetAllCustomer()
+        {
+            return _customerRepository.GetAllCustomer();
+        }
+
+        public async Task<List<BookingDetailViewModel>> GetAllBookingAsync()
+        {
+            var bookingHistory = await _bookingReservationRepository.GetAllBooking();
+            var bookingDetails = bookingHistory
+                .SelectMany(br => br.BookingDetails.Select(bd => new BookingDetailViewModel
+                {
+                    BookingReservationID = br.BookingReservationId,
+                    BookingDate = br.BookingDate,
+                    TotalPrice = br.TotalPrice,
+                    BookingStatus = br.BookingStatus,
+                    RoomNumber = bd.Room.RoomNumber,
+                    StartDate = bd.StartDate,
+                    EndDate = bd.EndDate,
+                    ActualPrice = bd.ActualPrice,
+                    CustomerName = br.Customer.CustomerFullName
+                }))
+                .ToList();
+            return bookingDetails;
         }
         public async Task<List<BookingDetailViewModel>> GetListBookingHistoryAsync(String id)
         { 
@@ -254,6 +278,7 @@ namespace ViewModel
         public decimal? TotalPrice { get; set; }
         public byte? BookingStatus { get; set; }
         public string RoomNumber { get; set; }
+        public string CustomerName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public decimal? ActualPrice { get; set; }

@@ -15,7 +15,7 @@ builder.Services.AddScoped<CustomerRepository>();
 builder.Services.AddScoped<BookingReservationRepository>();
 builder.Services.AddScoped<BookingDetailRepository>();
 builder.Services.AddScoped<EmailViewModel>();
-builder.Services.AddScoped<EmailSenderService>();
+builder.Services.AddScoped<WorkerService>();
 builder.Services.AddAuthentication().AddCookie("MyCookie", options =>
 {
     options.Cookie.Name = "MyCookie";
@@ -23,7 +23,7 @@ builder.Services.AddAuthentication().AddCookie("MyCookie", options =>
     options.AccessDeniedPath = "/Error";
 });
 builder.Services.AddSignalR();
-builder.Services.AddHostedService<EmailSenderService>();
+builder.Services.AddHostedService<WorkerService>();
 
 var app = builder.Build();
 

@@ -2,5 +2,55 @@
 @model RazorPage.Pages.Admin.AdminModel
 @{
 }
+<div class="text-center">
+    <h1 class="display-4">Admin Page</h1>
+</div>
+<div class="align-content-center">
 
-Admin
+    @if (Model.BookingHistory != null && Model.BookingHistory.Count > 0)
+    {
+        <h2>Booking History</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Booking Date</th>
+                    <th>Total Price</th>
+                    <th>Room number</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Actual Price</th>
+                    <th>Customer</th>
+                    @* <th></th> *@
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var booking in Model.BookingHistory)
+                {
+                    <tr>
+                        <td>@booking.BookingDate.Value.ToShortDateString()</td>
+                        <td>@booking.TotalPrice</td>
+                        <td>@booking.RoomNumber</td>
+                        <td>@booking.StartDate.ToShortDateString()</td>
+                        <td>@booking.EndDate.ToShortDateString()</td>
+                        <td>@booking.ActualPrice</td>
+                        <td>@booking.CustomerName</td>
+                       @*  <td>
+                            <form method="post">
+                                <input type="text" hidden class="form-control" asp-for="BookingReservationId"
+                                       value="@booking.BookingReservationID" />
+                                <input type="text" hidden class="form-control" asp-for="@Model.PageIndex"
+                                       value="BookingHistory.PageIndex" />
+                                <button type="submit">Cancel</button>
+                            </form>
+                        </td> *@
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h2>No booking history found</h2>
+    }
+
+</div>

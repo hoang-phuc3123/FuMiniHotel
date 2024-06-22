@@ -43,7 +43,8 @@ namespace RazorPage.Pages.Account
                     claims = new List<Claim>
                     {
                         new Claim("AdminId",EMAIL_ADMIN.ToString()),
-                        new Claim(ClaimTypes.Email, EMAIL_ADMIN)
+                        new Claim(ClaimTypes.Email, EMAIL_ADMIN),
+                        new Claim(ClaimTypes.Role, "Admin")
                     };
                     admin = true;
                 }
@@ -59,7 +60,8 @@ namespace RazorPage.Pages.Account
                     {
                         new Claim("CustomerId",user.Id.ToString()),
                         new Claim(ClaimTypes.Name, user.Name),
-                        new Claim(ClaimTypes.Email, user.Email)
+                        new Claim(ClaimTypes.Email, user.Email),
+                        new Claim(ClaimTypes.Role, "Customer")
                     };
                 }
                 var claimsIdentity = new ClaimsIdentity(claims, "MyCookie");

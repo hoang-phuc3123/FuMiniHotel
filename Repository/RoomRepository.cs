@@ -16,7 +16,7 @@ namespace Repository
                .Include(r => r.RoomType)
                .Include(r => r.BookingDetails)
                .Where(r => (r.BookingDetails.FirstOrDefault().StartDate >= startDate &&
-                           r.BookingDetails.FirstOrDefault().StartDate <= endDate) &&
+                           r.BookingDetails.FirstOrDefault().StartDate <= endDate) ||
                            (r.BookingDetails.FirstOrDefault().EndDate >= startDate &&
                            r.BookingDetails.FirstOrDefault().EndDate <= endDate))
                .ToListAsync();

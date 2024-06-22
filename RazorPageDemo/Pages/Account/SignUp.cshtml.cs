@@ -51,7 +51,7 @@ namespace RazorPage.Pages.Account
                     return Page();
                 }
 
-                Customer customer = new()
+                DataModel.Models.Customer customer = new()
                 {
                     EmailAddress = credential.Email,
                     CustomerFullName = "A",
