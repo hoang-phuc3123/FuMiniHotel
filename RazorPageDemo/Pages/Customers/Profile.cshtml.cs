@@ -38,8 +38,8 @@ namespace RazorPage.Pages
                 return Page();
             }
             TempData["SuccessMessage"] = "Profile updated successfully.";
-
-            return RedirectToPage("/Profile");
+            return Page();
+            //return RedirectToPage("Customers/Profile");
         }
     }
    

@@ -18,9 +18,9 @@ namespace Repository
             return this.GetAllAsync().Result.FirstOrDefault(x => x.EmailAddress == email && x.Password == password);
         }
 
-        public Customer GetCustomerByEmail(string email)
+        public async Task<Customer> GetCustomerByEmail(string email)
         {
-            return _dbContext.Customers.FirstOrDefault(c => c.EmailAddress == email);
+            return await _dbContext.Customers.FirstOrDefaultAsync(c => c.EmailAddress == email);
         }
 
         public List<Customer> GetAllCustomer()

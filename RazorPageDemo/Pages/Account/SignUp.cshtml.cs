@@ -52,7 +52,7 @@ namespace RazorPage.Pages.Account
         {
             if(ModelState.IsValid)
             {
-                var user = _customerViewModel.GetCustomerByEmail(credential.Email);
+                var user = await _customerViewModel.GetCustomerByEmail(credential.Email);
                 if (user != null)
                 {
                     ModelState.AddModelError(string.Empty, "Email has already existed.");
@@ -78,7 +78,7 @@ namespace RazorPage.Pages.Account
                     Subject = "Verify email"
                 };
 
-                _customerViewModel.RegisterCustomer(customer);
+                await _customerViewModel.RegisterCustomer(customer);
 
                 TempData["Email"] = customer.EmailAddress;
 

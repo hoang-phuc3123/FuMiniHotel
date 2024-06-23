@@ -19,14 +19,14 @@
     }
 }
 <div class="text-center">
-    <h1 class="display-4">Admin Page</h1>
+    <h1 class="display-4">Welcome back Admin</h1>
 </div>
 <div class="align-content-center">
 
     @if (Model.BookingHistory != null && Model.BookingHistory.Count > 0)
     {
-        <h2>Booking History</h2>
-        <table class="table">
+        <h2 class="display-6">Booking History</h2>
+        <table class="table table-bordered mt-4 table-striped table-hover">
             <thead>
                 <tr>
                     <th>Booking Date</th>
@@ -63,31 +63,31 @@
                 }
             </tbody>
         </table>
-        <ul class="pagination" style="display: flex; justify-content: center;">
-            <a asp-page="./Admin/Admin"
+        <ul class="pagination gap-4" style="display: flex; justify-content: center;">
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex=1
-               class="btn btn-primary @firstDisabled">
+               class="btn btn-secondary @firstDisabled">
                 First
             </a>
-            <a asp-page="./Admin/Admin"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex="@(Model.BookingHistory.PageIndex - 1)"
-               class="btn btn-primary @prevDisabled">
+               class="btn btn-secondary @prevDisabled">
                 Previous
             </a>
 
-            <ul class="pagination" style=" margin:5px;">
+            <ul class="pagination d-flex gap-2" style=" margin:5px;">
                 @Html.Raw(Model.BookingHistory.GeneratePaginationHtml())
             </ul>
 
-            <a asp-page="./Admin/Admin"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex="@(Model.BookingHistory.PageIndex + 1)"
-               class="btn btn-primary @nextDisabled">
+               class="btn btn-secondary @nextDisabled">
                 Next
             </a>
 
-            <a asp-page="./Admin/Admin"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex="@Model.BookingHistory.TotalPages"
-               class="btn btn-primary @lastDisabled">
+               class="btn btn-secondary @lastDisabled">
                 Last
             </a>
 
