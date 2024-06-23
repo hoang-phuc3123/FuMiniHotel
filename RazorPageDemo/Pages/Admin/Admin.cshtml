@@ -1,6 +1,22 @@
 ﻿@page
 @model RazorPage.Pages.Admin.AdminModel
 @{
+    var firstDisabled = "disable";
+    var prevDisabled = "disable";
+    var lastDisabled = "disable";
+    var nextDisabled = "disable";
+    if (Model.BookingHistory != null)
+    {
+        var bookingHistory = Model.BookingHistory;
+        int currentPage = Model.BookingHistory.PageIndex;
+        int totalPages = Model.BookingHistory.TotalPages;
+        int startPage = Math.Max(1, currentPage - 3);
+        int endPage = Math.Min(totalPages, currentPage + 3);
+        prevDisabled = !Model.BookingHistory.HasPreviousPage ? "disabled" : "";
+        firstDisabled = !Model.BookingHistory.HasPreviousPage ? "disabled" : "";
+        lastDisabled = !Model.BookingHistory.HasNextPage ? "disabled" : "";
+        nextDisabled = !Model.BookingHistory.HasNextPage ? "disabled" : "";
+    }
 }
 <div class="text-center">
     <h1 class="display-4">Admin Page</h1>
@@ -47,6 +63,35 @@
                 }
             </tbody>
         </table>
+        <ul class="pagination" style="display: flex; justify-content: center;">
+            <a asp-page="./Admin/Admin"
+               asp-route-pageIndex=1
+               class="btn btn-primary @firstDisabled">
+                First
+            </a>
+            <a asp-page="./Admin/Admin"
+               asp-route-pageIndex="@(Model.BookingHistory.PageIndex - 1)"
+               class="btn btn-primary @prevDisabled">
+                Previous
+            </a>
+
+            <ul class="pagination" style=" margin:5px;">
+                @Html.Raw(Model.BookingHistory.GeneratePaginationHtml())
+            </ul>
+
+            <a asp-page="./Admin/Admin"
+               asp-route-pageIndex="@(Model.BookingHistory.PageIndex + 1)"
+               class="btn btn-primary @nextDisabled">
+                Next
+            </a>
+
+            <a asp-page="./Admin/Admin"
+               asp-route-pageIndex="@Model.BookingHistory.TotalPages"
+               class="btn btn-primary @lastDisabled">
+                Last
+            </a>
+
+        </ul>
     }
     else
     {

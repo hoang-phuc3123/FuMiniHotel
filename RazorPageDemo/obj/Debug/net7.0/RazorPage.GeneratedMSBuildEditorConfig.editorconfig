@@ -9,71 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RazorPage
 build_property.RootNamespace = RazorPage
-build_property.ProjectDir = C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\
+build_property.ProjectDir = D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo
+build_property.MSBuildProjectDirectory = D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Account/Login.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Account/Logout.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Account/SignUp.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Account/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Account/VerifyMail.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Account/VerifyMail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxWZXJpZnlNYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Admin/Admin.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Admin/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/BookingHistory.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/BookingHistory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va2luZ0hpc3RvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Customers/Booking.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Customers/Booking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXEJvb2tpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Customers/Profile.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Customers/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJzXFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Error.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Index.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Privacy.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/_ViewImports.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/_ViewStart.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lc_Tn/Desktop/ALL/FPTU/2024 SUMMER/PRN221/FuMiniHotel/RazorPageDemo/Pages/Shared/_Layout.cshtml]
+[D:/FPT University/PRN221/Project/Assignment 2/FuMiniHotel/RazorPageDemo/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ylr71wum2d

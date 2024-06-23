@@ -69,12 +69,12 @@
             </tbody>
         </table>
         <ul class="pagination" style="display: flex; justify-content: center;">
-            <a asp-page="./Index"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex=1
                class="btn btn-primary @firstDisabled">
                 First
             </a>
-            <a asp-page="./Index"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex="@(Model.BookingHistory.PageIndex - 1)"
                class="btn btn-primary @prevDisabled">
                 Previous
@@ -84,13 +84,13 @@
                 @Html.Raw(Model.BookingHistory.GeneratePaginationHtml())
             </ul>
 
-            <a asp-page="./Index"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex="@(Model.BookingHistory.PageIndex + 1)"
                class="btn btn-primary @nextDisabled">
                 Next
             </a>
 
-            <a asp-page="./Index"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex="@Model.BookingHistory.TotalPages"
                class="btn btn-primary @lastDisabled">
                 Last

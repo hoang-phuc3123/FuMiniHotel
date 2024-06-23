@@ -312,3 +312,8 @@ C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\bin
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\Lc_Tn\Desktop\ALL\FPTU\2024 SUMMER\PRN221\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\System.CodeDom.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Humanizer.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\FPT University\PRN221\Project\Assignment 2\FuMiniHotel\RazorPageDemo\bin\Debug\net7.0\System.CodeDom.dll
