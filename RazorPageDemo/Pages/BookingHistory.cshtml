@@ -25,15 +25,17 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome @User.Identity.Name</h1>
-    <button type="button" class="btn btn-primary" onclick="redirectToBooking()">Booking</button>
 </div>
 
 <div class="align-content-center">
-
     @if (Model.BookingHistory != null && Model.BookingHistory.Count > 0)
     {
-        <h2>Booking History</h2>
-        <table class="table">
+        <div class="d-flex justify-content-between align-items-end">
+            <h2 class="display-6">Booking History</h2>
+            <button type="button" class="btn btn-primary" onclick="redirectToBooking()">Booking a Room</button>
+        </div>
+
+        <table class="table table-bordered mt-4 table-striped table-hover">
             <thead>
                 <tr>
                     <th>Booking Date</th>
@@ -49,11 +51,11 @@
                 @foreach (var booking in Model.BookingHistory)
                 {
                     <tr id="roomTableBody">
-                        <td>@booking.BookingDate</td>
+                        <td>@booking.BookingDate.Value.ToString("MM/dd/yyyy")</td>
                         <td>@booking.TotalPrice</td>
                         <td>@booking.RoomNumber</td>
-                        <td>@booking.StartDate</td>
-                        <td>@booking.EndDate</td>
+                        <td>@booking.StartDate.ToString("MM/dd/yyyy")</td>
+                        <td>@booking.EndDate.ToString("MM/dd/yyyy")</td>
                         <td>@booking.ActualPrice</td>
                         <td>
                             <form method="post">
@@ -61,38 +63,38 @@
                                        value="@booking.BookingReservationID" />
                                 <input type="text" hidden class="form-control" asp-for="@Model.PageIndex"
                                        value="BookingHistory.PageIndex" />
-                                <button type="submit" class="btn btn-danger">Cancel</button>
+                                <button type="submit" class="btn btn-outline-danger">Cancel</button>
                             </form>
                         </td>
                     </tr>
                 }
             </tbody>
         </table>
-        <ul class="pagination" style="display: flex; justify-content: center;">
-            <a asp-page="./Index"
+        <ul class="pagination gap-4" style="display: flex; justify-content: center;">
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex=1
-               class="btn btn-primary @firstDisabled">
+               class="btn btn-secondary @firstDisabled">
                 First
             </a>
-            <a asp-page="./Index"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex="@(Model.BookingHistory.PageIndex - 1)"
-               class="btn btn-primary @prevDisabled">
+               class="btn btn-secondary @prevDisabled">
                 Previous
             </a>
 
-            <ul class="pagination" style=" margin:5px;">
+            <ul class="pagination d-flex gap-2" style=" margin:5px;">
                 @Html.Raw(Model.BookingHistory.GeneratePaginationHtml())
             </ul>
 
-            <a asp-page="./Index"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex="@(Model.BookingHistory.PageIndex + 1)"
-               class="btn btn-primary @nextDisabled">
+               class="btn btn-secondary @nextDisabled">
                 Next
             </a>
 
-            <a asp-page="./Index"
+            <a asp-page="./BookingHistory"
                asp-route-pageIndex="@Model.BookingHistory.TotalPages"
-               class="btn btn-primary @lastDisabled">
+               class="btn btn-secondary @lastDisabled">
                 Last
             </a>
 
@@ -100,7 +102,10 @@
     }
     else
     {
-        <h2>No booking history found</h2>
+        <div class="d-flex justify-content-between align-items-end">
+            <h2 class="display-6">No booking history found</h2>
+            <button type="button" class="btn btn-primary" onclick="redirectToBooking()">Booking a Room</button>
+        </div>
     }
 
 </div>

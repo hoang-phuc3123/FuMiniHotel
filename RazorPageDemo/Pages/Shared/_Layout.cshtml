@@ -19,18 +19,38 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/BookingHistory">Home</a>
-                        </li>
-                        <li class="nav-item">
+                        
+                        @* <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Account/SignUp">Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Profile">Profile</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Customers/Profile">Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Account/Logout">Logout</a>
-                        </li>
+                        </li> *@
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Admin/Admin">Home</a>
+                                </li>
+                            }
+                            @if (User.IsInRole("Customer"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/BookingHistory">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Customers/Profile">Profile</a>
+                                </li>
+                            }
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Account/Logout">Logout</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
@@ -44,7 +64,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - RazorPageDemo - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2024 - FU Mini Hotel - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 

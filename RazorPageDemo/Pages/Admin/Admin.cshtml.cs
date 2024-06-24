@@ -36,13 +36,14 @@ namespace RazorPage.Pages.Admin
             _context = context;
             _signalRHub = signalRHub;
         }
-        public async Task OnGetAsync(int? pageIndex)
+        public async Task<IActionResult> OnGetAsync(int? pageIndex)
         {
                 var BookingHistoryList = await _customerViewModel.GetAllBookingAsync();
 
                 int pageSize = 5;
                 BookingHistory = await PaginatedList<BookingDetailViewModel>.CreateAsync(BookingHistoryList, pageIndex ?? 1, pageSize);
                 PaginationHtml = GeneratePaginationHtml();
+            return Page();
 
         }
 

@@ -53,7 +53,7 @@ namespace RazorPageDemo.Pages
                     var user = _customerViewModel.GetCustomerByEmailAndPassword(credential.Email, credential.Password);
                     if (user == null)
                     {
-                        ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                        ModelState.AddModelError(string.Empty, "Invalid credential, please try again.");
                         return Page();
                     }
                     claims = new List<Claim>

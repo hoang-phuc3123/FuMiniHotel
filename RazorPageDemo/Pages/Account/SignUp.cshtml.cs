@@ -12,6 +12,14 @@ namespace RazorPage.Pages.Account
 {
     public class Credential
     {
+        [Required(ErrorMessage = "Full name is required")]
+        [StringLength(50, ErrorMessage = "Full name must be no more than 50 characters")]
+        public string Fullname { get; set; }
+        [Required(ErrorMessage = "Date of Birth is required")]
+        public DateTime DateOfBirth { get; set; }
+        [Required(ErrorMessage = "PhoneNumber is required"), Phone(ErrorMessage = "Invalid phone format")]
+        [StringLength(15, ErrorMessage = "PhoneNumber must be no more than 15 characters")]
+        public string PhoneNumber { get; set; }
         [Required]
         public string Email { get; set; }
         [Required]
@@ -44,7 +52,7 @@ namespace RazorPage.Pages.Account
         {
             if(ModelState.IsValid)
             {
-                var user = _customerViewModel.GetCustomerByEmail(credential.Email);
+                var user = await _customerViewModel.GetCustomerByEmail(credential.Email);
                 if (user != null)
                 {
                     ModelState.AddModelError(string.Empty, "Email has already existed.");
@@ -54,9 +62,9 @@ namespace RazorPage.Pages.Account
                 DataModel.Models.Customer customer = new()
                 {
                     EmailAddress = credential.Email,
-                    CustomerFullName = "A",
-                    Telephone = "1234567890",
-                    CustomerBirthday = null,
+                    CustomerFullName = credential.Fullname,
+                    Telephone = credential.PhoneNumber,
+                    CustomerBirthday = credential.DateOfBirth,
                     CustomerStatus = 0,
                     Password = credential.Password,
                     EmailVerifyCode = new Random().Next(100000, 1000000)
@@ -70,7 +78,7 @@ namespace RazorPage.Pages.Account
                     Subject = "Verify email"
                 };
 
-                _customerViewModel.RegisterCustomer(customer);
+                await _customerViewModel.RegisterCustomer(customer);
 
                 TempData["Email"] = customer.EmailAddress;
 

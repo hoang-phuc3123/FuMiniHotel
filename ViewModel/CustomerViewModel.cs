@@ -75,9 +75,9 @@ namespace ViewModel
             }
         }
 
-        public Customer GetCustomerByEmail(string email)
+        public async Task<Customer> GetCustomerByEmail(string email)
         {
-            return _customerRepository.GetCustomerByEmail(email);
+            return await _customerRepository.GetCustomerByEmail(email);
         }
 
         public List<Customer> GetAllCustomer()

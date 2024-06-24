@@ -43,7 +43,7 @@ namespace RazorPage.Pages.Account
         {
             if (ModelState.IsValid)
             {
-                var customer = _customerViewModel.GetCustomerByEmail(Verify.Email);
+                var customer = await _customerViewModel.GetCustomerByEmail(Verify.Email);
                 if (customer == null)
                 {
                     ModelState.AddModelError(string.Empty, "Customer not found");

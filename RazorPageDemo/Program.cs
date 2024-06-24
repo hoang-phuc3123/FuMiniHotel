@@ -19,7 +19,8 @@ builder.Services.AddScoped<WorkerService>();
 builder.Services.AddAuthentication().AddCookie("MyCookie", options =>
 {
     options.Cookie.Name = "MyCookie";
-    options.LoginPath = "/Account/Login";
+    //options.LoginPath = "/Account/Login";
+    options.LoginPath = "/Index";
     options.AccessDeniedPath = "/Error";
 });
 builder.Services.AddSignalR();
